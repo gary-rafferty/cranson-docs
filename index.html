@@ -284,10 +284,18 @@ All enumerated responses use link-header pagination. Please use this to iterate 
     </span><span class="s2">"link"</span><span class="p">:</span><span class="s2">"http://planning.fingalcoco.ie/swiftlg/apas/run/WPHAPPDETAIL.DisplayURL?theApnID=FW16A/0147"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"reference"</span><span class="p">:</span><span class="s2">"FW16A/0147"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"registration_date"</span><span class="p">:</span><span class="s2">"2016-12-29"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"address"</span><span class="p">:</span><span class="s2">"The Wren's Nest, R121, Westmanstown, Clonsilla, Dublin 15"</span><span class="w">
+    </span><span class="s2">"address"</span><span class="p">:</span><span class="s2">"The Wren's Nest, R121, Westmanstown, Clonsilla, Dublin 15"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"audits"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"changes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"Current Status"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Pending"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Decided"</span><span class="p">]},</span><span class="w">
+        </span><span class="s2">"changed_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">2017-01-29</span><span class="s2">""</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves a specific planning application.</p>
+<p>This endpoint retrieves a specific planning application. In addition to the plan data, it also includes an audit log of changes over time.<br>
+If there are any changes to display, we will include the original value, the updated value, and the date we retrieved the change.<br>
+In the example above, the status of the application changed from pending to decided.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
