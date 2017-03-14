@@ -82,11 +82,19 @@ curl "api_endpoint_here/plans/14939"
     "link":"http://planning.fingalcoco.ie/swiftlg/apas/run/WPHAPPDETAIL.DisplayURL?theApnID=FW16A/0147",
     "reference":"FW16A/0147",
     "registration_date":"2016-12-29",
-    "address":"The Wren's Nest, R121, Westmanstown, Clonsilla, Dublin 15"
+    "address":"The Wren's Nest, R121, Westmanstown, Clonsilla, Dublin 15",
+    "audits": [
+      {
+        "changes": {"Current Status": ["Pending", "Decided"]},
+        "changed_at": 2017-01-29""
+      }
+    ]
   }
 ```
 
-This endpoint retrieves a specific planning application.
+This endpoint retrieves a specific planning application. In addition to the plan data, it also includes an audit log of changes over time.  
+If there are any changes to display, we will include the original value, the updated value, and the date we retrieved the change.  
+In the example above, the status of the application changed from pending to decided.
 
 ### HTTP Request
 
