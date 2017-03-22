@@ -1,11 +1,7 @@
 ---
-title: API Reference
-
-language_tabs:
-  - shell
+title: Cranons API Documentation
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/gary-rafferty/cranson-docs'>Documentation Source</a>
   - <a href='https://github.com/gary-rafferty/cranson-app'>Cranson API</a>
   - <a href='https://github.com/gary-rafferty/cranson'>Cranson Gem</a>
