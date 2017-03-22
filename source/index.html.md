@@ -37,7 +37,7 @@ Ideally, consumers should able to programatically query things like
 
 
 ```shell
-curl "api_endpoint_here/plans"
+curl "http://api.cranson.co/plans"
 ```
 
 > The above command returns JSON structured like this:
@@ -63,12 +63,12 @@ All enumerated responses use link-header pagination. Please use this to iterate 
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans`
+`GET http://api.cranson.co/plans`
 
 ## Get a Specific Planning Application
 
 ```shell
-curl "api_endpoint_here/plans/14939"
+curl "http://api.cranson.co/plans/14939"
 ```
 
 > The above command returns JSON structured like this:
@@ -98,7 +98,7 @@ In the example above, the status of the application changed from pending to deci
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans/<ID>`
+`GET http://api.cranson.co/plans/<ID>`
 
 ### URL Parameters
 
@@ -109,7 +109,7 @@ ID | The ID of the plan to retrieve
 ## Search Plans By Address
 
 ```shell
-curl "api_endpoint_here/plans/search?query=Clonsilla"
+curl "http://api.cranson.co/plans/search?query=Clonsilla"
 ```
 
 > The above command returns JSON structured like this:
@@ -133,7 +133,7 @@ This endpoint retrieves all planning applications that have addresses containing
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans/search?query=<QUERY>`
+`GET http://api.cranson.co/plans/search?query=<QUERY>`
 
 ### URL Parameters
 
@@ -144,7 +144,7 @@ QUERY | A string used to search against plan addresses.
 ## Search Plans Within N Kilometres of a LatLng
 
 ```shell
-curl api_endpoint_here/plans/within?kilometres=1&latlng=53.3841296,-6.0731679
+curl http://api.cranson.co/plans/within?kilometres=1&latlng=53.3841296,-6.0731679
 ```
 
 > The above command returns JSON structured like this:
@@ -168,7 +168,7 @@ This endpoint retrieves all planning applications within N kilometres of a given
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans/within?kilometres=<N>&latlng=<LATLNG>`
+`GET http://api.cranson.co/plans/within?kilometres=<N>&latlng=<LATLNG>`
 
 ### URL Parameters
 
@@ -180,7 +180,7 @@ LATLNG | Comma seperated value of latitude,longitude.
 ## Get All Decided Plans 
 
 ```shell
-curl api_endpoint_here/plans/decided
+curl http://api.cranson.co/plans/decided
 ```
 
 > The above command returns JSON structured like this:
@@ -204,12 +204,12 @@ This endpoint retrieves all decided planning applications.
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans/decided`
+`GET http://api.cranson.co/plans/decided`
 
 ## Get All Invalid Plans 
 
 ```shell
-curl api_endpoint_here/plans/invalid
+curl http://api.cranson.co/plans/invalid
 ```
 
 > The above command returns JSON structured like this:
@@ -233,12 +233,12 @@ This endpoint retrieves all invalid planning applications.
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans/invalid`
+`GET http://api.cranson.co/plans/invalid`
 
 ## Get All Unknown status Plans 
 
 ```shell
-curl api_endpoint_here/plans/unknown
+curl http://api.cranson.co/plans/unknown
 ```
 
 > The above command returns JSON structured like this:
@@ -262,12 +262,12 @@ This endpoint retrieves all unknown planning applications.
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans/unknown`
+`GET http://api.cranson.co/plans/unknown`
 
 ## Get All Pending Plans 
 
 ```shell
-curl api_endpoint_here/plans/pending
+curl http://api.cranson.co/plans/pending
 ```
 
 > The above command returns JSON structured like this:
@@ -291,12 +291,12 @@ This endpoint retrieves all pending planning applications.
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans/pending`
+`GET http://api.cranson.co/plans/pending`
 
 ## Get All On-Appeal Plans 
 
 ```shell
-curl api_endpoint_here/plans/on_appeal
+curl http://api.cranson.co/plans/on_appeal
 ```
 
 > The above command returns JSON structured like this:
@@ -320,4 +320,4 @@ This endpoint retrieves all on_appeal planning applications.
 
 ### HTTP Request
 
-`GET api_endpoint_here/plans/on_appeal`
+`GET http://api.cranson.co/plans/on_appeal`
