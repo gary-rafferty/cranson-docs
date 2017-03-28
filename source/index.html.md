@@ -2,9 +2,9 @@
 title: Cranons API Documentation
 
 toc_footers:
-  - <a href='https://github.com/gary-rafferty/cranson-docs'>Documentation Source</a>
   - <a href='https://github.com/gary-rafferty/cranson-app'>Cranson API</a>
   - <a href='https://github.com/gary-rafferty/cranson'>Cranson Gem</a>
+  - <a href='https://github.com/gary-rafferty/cranson-docs'>Documentation Source</a>
 
 includes:
   - errors
@@ -16,7 +16,7 @@ search: true
 
 Welcome to the Cranson API. You can use this API to access Fingal planning applications.  
 
-We have provided a public RESTful API, that we hope will provide an intuitive way to explore existing, and new planning applications. 
+We have provided a public RESTful API, that we hope will provide an intuitive way of explore existing, and new planning applications.
 
 As per the project [README](https://github.com/gary-rafferty/cranson-app), the purpose of the API is:
 
@@ -25,7 +25,12 @@ Ideally, consumers should able to programatically query things like
 - Show me all applications submitted last month.  
 - Show me all pending applications within 5 kilometres of my house.  
 - Show me recently decided applications.  
+- Show me all changes / updates for a particular application.
 
+For now, the only housing authority supported is Fingal, but we plan to add more in the future.  
+We've identified datasets for Dublin City Council, Dun-Laoghaire Rathdown, and South County Dublin, so these authorities are on our plan. 
+
+If you would like to help, please get in touch on [Github](https://github.com/gary-rafferty/cranson-app/issues/new).
 
 # Plans
 
@@ -55,7 +60,8 @@ curl "http://api.cranson.co/plans"
 ```
 
 This endpoint retrieves all plans, paginated in batches of 50.  
-All enumerated responses use link-header pagination. Please use this to iterate over the paged responses.
+All enumerated responses use link-header pagination. Please use this to iterate over the paged responses.  
+By default, plans are ordered by latest registration date.
 
 ### HTTP Request
 
