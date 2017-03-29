@@ -16,11 +16,11 @@ search: true
 
 Welcome to the Cranson API. You can use this API to access Fingal planning applications.  
 
-We have provided a public RESTful API, that we hope will provide an intuitive way of explore existing, and new planning applications.
+We have provided a public RESTful API, that we hope will provide an intuitive way of exploring existing, and new planning applications.
 
 As per the project [README](https://github.com/gary-rafferty/cranson-app), the purpose of the API is:
 
-To expose an intuitive interface to query and retrieve planning applications.  
+To provide an intuitive interface to query and retrieve planning applications.  
 Ideally, consumers should able to programatically query things like  
 - Show me all applications submitted last month.  
 - Show me all pending applications within 5 kilometres of my house.  
@@ -28,7 +28,7 @@ Ideally, consumers should able to programatically query things like
 - Show me all changes / updates for a particular application.
 
 For now, the only housing authority supported is Fingal, but we plan to add more in the future.  
-We've identified datasets for Dublin City Council, Dun-Laoghaire Rathdown, and South County Dublin, so these authorities are on our plan. 
+We've identified datasets for Dublin City Council, Dun-Laoghaire Rathdown, and South County Dublin, so these authorities are on our roadmap. 
 
 If you would like to help, please get in touch on [Github](https://github.com/gary-rafferty/cranson-app/issues/new).
 
