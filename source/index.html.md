@@ -67,6 +67,73 @@ By default, plans are ordered by latest registration date.
 
 `GET http://api.cranson.co/plans`
 
+## Get All Planning Applications Registered In The Last Month
+
+
+```shell
+curl "http://api.cranson.co/plans/recently_registered"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    "id":14939,
+    "status":"Decided",
+    "decision_date":"2017-01-27",
+    "description":"Two storey extension to existing two storey two bedroom dwelling...",
+    "link":"http://planning.fingalcoco.ie/swiftlg/apas/run/WPHAPPDETAIL.DisplayURL?theApnID=FW16A/0147",
+    "reference":"FW16A/0147",
+    "registration_date":"2016-12-29",
+    "address":"The Wren's Nest, R121, Westmanstown, Clonsilla, Dublin 15"
+  }
+  // snipped
+]
+```
+
+This endpoint retrieves all recently registered plans, paginated in batches of 50.  
+All enumerated responses use link-header pagination. Please use this to iterate over the paged responses.  
+By default, plans are ordered by latest registration date.
+
+### HTTP Request
+
+`GET http://api.cranson.co/plans/recently_registered`
+
+## Get All Planning Applications Decided In The Last Month
+
+
+```shell
+curl "http://api.cranson.co/plans/recently_decided"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    "id":14939,
+    "status":"Decided",
+    "decision_date":"2017-01-27",
+    "description":"Two storey extension to existing two storey two bedroom dwelling...",
+    "link":"http://planning.fingalcoco.ie/swiftlg/apas/run/WPHAPPDETAIL.DisplayURL?theApnID=FW16A/0147",
+    "reference":"FW16A/0147",
+    "registration_date":"2016-12-29",
+    "address":"The Wren's Nest, R121, Westmanstown, Clonsilla, Dublin 15"
+  }
+  // snipped
+]
+```
+
+This endpoint retrieves all plans decided in the last month, paginated in batches of 50.  
+All enumerated responses use link-header pagination. Please use this to iterate over the paged responses.  
+By default, plans are ordered by latest registration date.
+
+### HTTP Request
+
+`GET http://api.cranson.co/plans/recently_decided`
+
+
 ## Get a Specific Planning Application
 
 ```shell
